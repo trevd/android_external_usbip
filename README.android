@@ -1,0 +1,20 @@
+USBIP Userland tools for Android
+================================
+
+Yanked for the linux kernel sources tools/usb/usbip
+Your kernel must have the required modules compiled for the thing to
+work
+
+Depends on libudev ( https://github.com/trevd/android_external_libudev )
+
+Place usb.ids in /system/etc
+
+usage: In Android shell
+usbip attach -r 192.168.1.2 -b 1-5 
+
+Note: Version info must match that of the server "usbip (usbip-utils 2.0)"
+
+You can use the same sources to compile the server and client side tools
+
+
+
